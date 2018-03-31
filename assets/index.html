@@ -8,27 +8,30 @@
     <title>Train Scheduler</title>
 
     <!-- Javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
         <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-    <script src="app.js"></script>
+   
 
 
     <!-- Stylesheets -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+ 
 
 </head>
 
-<body>
-
+<body>   
+        
     <div class="container">
         <div class="jumbotron" id="jumbotron">
-            <h1>Train Schedule</h1>
+            <h1>Train Scheduler</h1>
             <p>Get There On Time</p>
         </div>
+
+
         <div class="panel panel-primary">
             <div class="panel-heading">Current Train Schedule</div>
             <div class="panel-body">
@@ -42,6 +45,45 @@
                     </tr>
                 </table>
             </div>
+<table>
+
+        <table width="100%" border="1">
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
 
         </div>
         <div class="panel panel-primary">
@@ -49,20 +91,20 @@
             <form id="TrainForm">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Train Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                    <input type="text" class="form-control" id="trainname" aria-describedby="emailHelp" placeholder="">
                     <small id="emailHelp" class="form-text">Please Indicate The Train Number</small>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Destination</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+                    <input type="text" class="form-control" id="destination" placeholder="">
                 </div>
                 <div class="form-group">
-                        <label for="exampleInputPassword1">First Train Time</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="HH:mm">
+                        <label for="exampleInputPassword1">First Arrival</label>
+                        <input type="text" class="form-control" id="firstarrival" placeholder="HH:mm">
                     </div>
                 <div class="form-group">
                         <label for="exampleInputPassword1">Frequency</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+                        <input type="text" class="form-control" id="frequency" placeholder="">
                     </div>
                 <!-- <div class="form-check"> -->
                     <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -75,6 +117,8 @@
 
 
         </div>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <script src='./app.js'></script>
 </body>
 
 </html>
